@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f1f1f1;
+}
+
+.login-box {
+  position: relative;
+  max-width: 400px;
+  height: 400px;
+  margin: 100px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-box .openleft {
+  width: 120px;
+  height: 90px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url(../assets/loginAndRegisterImg/left-open.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.login-box .closeleft {
+  width: 120px;
+  height: 90px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url(../assets/loginAndRegisterImg/left-close.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.login-box .openright {
+  width: 120px;
+  height: 90px;
+  top: 0;
+  right: -28px;
+  position: absolute;
+  background-image: url(../assets/loginAndRegisterImg/right-open.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.login-box .closeright {
+  width: 120px;
+  height: 90px;
+  top: 0;
+  right: -28px;
+  position: absolute;
+  background-image: url(../assets/loginAndRegisterImg/right-close.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.user-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.user-box input:focus~label,
+.user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #1abc9c;
+  font-size: 12px;
+}
+
+a {
+  display: inline-block;
+  background: #1abc9c;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  background: #bbd3ce;
+  color: #1abc9c;
+}
+
+.login-btn {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #342d2d;
+}
+
+.login-btn:hover {
+  color: #1abc9c;
+}
+
+.register-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #342d2d;
+}
+
+.register-link:hover {
+  color: #1abc9c;
+}
+
+.user-box .code-btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #342d2d;
+  background: #bbd3ce;
+  /* 渐变背景 */
+  border: none;
+  border-radius: 5px;
+  /* 圆角效果 */
+  text-align: center;
+  text-decoration: none;
+  /* 移除下划线 */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* 过渡效果 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* 阴影效果 */
+}
+
+.user-box .code-btn:hover {
+  color: #1abc9c;
+  /* 鼠标悬停文字颜色 */
+  background: #bbd3ce;
+  /* 鼠标悬停渐变颜色 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  /* 加深阴影 */
+  transform: translateY(-2px);
+  /* 微微向上浮动 */
+}
+
+.user-box .code-btn:active {
+  transform: translateY(2px);
+  /* 按下时向下压 */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  /* 减弱阴影 */
+}
+
+.user-box .code-btn[disabled] {
+  background: #cccccc;
+  /* 禁用时的背景色 */
+  color: #666666;
+  /* 禁用时的文字色 */
+  cursor: not-allowed;
+  /* 禁用时鼠标样式 */
+  box-shadow: none;
+  /* 去除阴影 */
+}
