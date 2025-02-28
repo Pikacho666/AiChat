@@ -6,8 +6,8 @@ AiChat 是一个基于 Vue3 和 Express 的聊天应用项目，包含前后端�
 
 ### 在线体验
 
-- 项目演示地址：[https://lcngr.zrllove.cn/](https://lcngr.zrllove.cn/)
-- 作者个人网站：[https://www.zrllove.cn/](https://www.zrllove.cn/)
+- 项目演示地址：[AiChat - Online](https://lcngr.zrllove.cn/)
+- 作者个人网站：[Nick's 个人小破站](https://www.zrllove.cn/)
 
 ### 界面预览
 
@@ -137,25 +137,26 @@ npm run dev
 2. 建议在开发环境中使用环境变量管理敏感配置信息
 3. 首次运行前确保已完成所有必要的配置步骤
 
-## 百度文心一言API配置
+## 百度文心一言 API 配置
 
 1. 访问[百度智能云](https://cloud.baidu.com/)并登录您的账号
 2. 在控制台中找到并开通文心一言大模型服务
-3. 获取API配置信息：
-   - 在控制台中找到您的API Key和Secret Key
+3. 获取 API 配置信息：
+
+   - 在控制台中找到您的 API Key 和 Secret Key
    - 复制这两个密钥
 
-4. 配置项目中的API凭证：
+4. 配置项目中的 API 凭证：
    - 打开 `AiChat_back/utils/chatUtil.js` 文件
    - 找到以下代码段：
      ```javascript
      const AK = "Your API Key";
      const SK = "Your Secret Key";
      ```
-   - 将您的API Key替换 "Your API Key"
-   - 将您的Secret Key替换 "Your Secret Key"
+   - 将您的 API Key 替换 "Your API Key"
+   - 将您的 Secret Key 替换 "Your Secret Key"
 
-注意：请妥善保管您的API凭证，不要将其提交到公共代码仓库中。建议使用环境变量来管理这些敏感信息。
+注意：请妥善保管您的 API 凭证，不要将其提交到公共代码仓库中。建议使用环境变量来管理这些敏感信息。
 
 ## 技术栈
 
